@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.6s ease-in-out;
+}
+body{
+    background: #eee;
+    font-family: sans-serif;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+.timer-circle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 50%;
+    background: #2B2D2F;
+    box-shadow: -20px -5px 1.5px #2b2d2fdc;
+    -moz-box-shadow: -20px -5px  1.5px#2b2d2fdc;
+    -webkit-box-shadow: -20px -5px 1.5px #2b2d2fdc;
+    -o-box-shadow: -20px -5px 1.5px #2b2d2fdc;
+    width: 25rem;
+    height: 26rem;
+    position: relative;
+    z-index: 10;
+}
+#btn-start-stop{
+    border-top-left-radius: 70rem;
+    border-top-right-radius: 70rem;
+    border-bottom-left-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+    width: 200px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size:large;
+    background: #2B2D2F;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px #000;
+    outline: none;
+    padding: 1.5rem;
+    text-transform: uppercase;
+    line-height: 2rem;
+}
+#hour-label{
+    border-bottom-left-radius: 20rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    padding: 1.5rem 2.5rem;
+    font-weight: bold;
+    background: #2B2D2F;
+    color: #fff;
+    box-shadow: 2px 2px 2px #000;
+    width: 100px;
+    border: 1px solid #000;
+}
+#min-label{
+    border-radius: 0.2rem;
+    padding: 1.5rem 0.6rem;
+    font-weight: bold;
+    background: #2B2D2F;
+    color: #fff;
+    box-shadow: 2px 2px 2px #000;
+    border: 1px solid #000;
+}
+#sec-label{
+    border-bottom-right-radius: 20rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    padding: 1.5rem 2.5rem;
+    font-weight: bold;
+    background: #2B2D2F;
+    color: #fff;
+    box-shadow: 2px 2px 2px #000;
+    width: 100px;
+    border: 1px solid #000;
+}
+@font-face{
+    font-family:'digital-clock-font';
+    src: url(../font/technology/Technology-Bold.ttf);
+ }
+#time{
+    width: 260px;
+    height: 64px;
+    border-radius: 1rem;
+    background: rgb(135, 250, 202);
+    font-size: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'digital-clock-font';
+    margin-bottom: 1.5rem;
+    text-align: center;
+    
+}
+.container-reset{
+    position: relative;
+    width: 171px;
+    height: 81px;
+}
+.container-reset div, .container-reset span{
+    position: absolute;
+}
+.container-reset div{
+    width: 174px;
+    height: 121px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    top: -73px;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+    border-top-color: #2B2D2F;
+    border-left-color: #2B2D2F;
+    border-right-color: #2B2D2F;
+}
+.container-reset span{
+    top: 39px;
+    left: 50px;
+    background: #2B2D2F;
+    width: 4.1rem;
+    padding-left: 0.6rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    color: orange;
+    font-weight: bold;
+    padding-right: 3.9rem;
+}
+.reset-circle{
+    z-index: -5;
+}
+.container-minSec-label{
+    margin-top: 0.6rem;
+}
+#min-label, #sec-label, #hour-label{
+    color: rgb(135, 250, 202);
+}
+
+.hr , .min, .sec{
+    width: 60px;
+}
